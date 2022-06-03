@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <title>Help Center</title>
+</head>
+<body>
+    <div class=" bg-black p-5">
+        <div class="header-inner">
+            <a href="" class=" w-32 hidden md:block">
+                <img src="../Img/penpot_logo.png" alt="" width="100%" class="hidden md:block">
+            </a>
+            <a href="" class="bg-primary items-center p-2  rounded text-center justify-center lg:w-64 w-full hover:bg-white duration-300">
+                Try Penpot - It's free
+            </a>
+        </div>
+    </div>
+
+    <header class="p-6 border-b-2 border-gray-300 sticky top-0 z-10 bg-white">
+        <div class="header md:flex items-center ">
+            <a href="" class=" text-2xl hidden md:block">Help Center</a>
+            <ul class="nav text-base ">
+                <li class=" pl-6 hidden md:block "><a href="./Index.html" class="border-b-2 border-black font-bold">Home</a></li>
+                <li class=" pl-6 "><a href="./UserGuid.html" class=" hover:border-b-2 border-black ">User guide</a></li>
+                <li class=" pl-6 "><a href="./Contributing.html" class=" hover:border-b-2 border-black ">Contributing</a></li>
+                <li class=" pl-6 "><a href="./TechnicalGuide.html" class=" hover:border-b-2 border-black ">Technical Guide</a></li>
+                <li class=" pl-6 "><a href="./FAQs.html" class=" hover:border-b-2 border-black ">FAQs</a></li>
+            </ul>
+            <div class="border-2 border-gray-200 flex items-center justify-between p-2 mt-5 md:mt-0">
+                <input type="search" placeholder="Search..." autocomplete="off" id="search-field" > 
+                <i class="fa-solid fa-magnifying-glass text-gray-300"></i>
+                </input>
+                
+            </div>
+        </div>
+    </header>
+
+    <main> 
+        <div class="max-w-screen-xl m-auto flex ">
+            <div class="w-64 ">
+                <a class="text-2xl mb-8 font-bold block mt-10" href="/technical-guide/">Overview</a>
+
+                <ul>
+                    <li class=" py-3 font-bold">
+                        <a href="/technical-guide/getting-started/">1. Getting Started</a>
+                    </li>
+                    <li class=" py-3 font-bold">
+                        <a href="/technical-guide/configuration/">2. Advanced Configuration</a>
+                    </li>
+                    <li class=" py-3 font-bold">
+                        <a href="/technical-guide/architecture/">3. Architecture</a>
+                    </li>
+                    <li class=" py-3 font-bold">
+                        <a href="/technical-guide/developer/">4. Developer Guide</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-w-128 mx-auto">
+                <div class="w-96  mx-auto mt-9">
+                    <img src="../Img/home-techguide.png" alt="" width="100%">           
+                </div>
+                <h1 class="text-8xl font-bold text-center my-20 " id="overview">
+                    Overview
+                </h1>
+                <p class=" text-lg mb-6">This documentation intends to explain how to get Penpot application and run it locally, test it, or make changes to it.</p>
+                <p class=" text-lg mb-6">There are two main options for creating a local on-premise instance:</p>
+                <ul class="list-decimal text-lg pl-4 mb-6">
+                    <li class="mb-6">
+                        Using the platform of our partner. <a href="https://elest.io/" class=" text-primary hover:text-black">Elestio</a>
+                    </li>
+                    <li>
+                        Doing the installation yourself with Docker.
+                    </li>
+                </ul>
+
+                <p class="text-lg bg-advice p-8 rounded mb-6">
+                    If you don't have experience using Docker or if you want a fully automatically managed service, we recommend using Elestio.
+                    Otherwise, go for Docker.
+                </p>
+                
+                <ul class="list-disc text-lg">
+                    <li class="mb-6">
+                            <p>In the 
+                            <a href="/technical-guide/getting-started/#install-with-elestio" class="text-primary hover:text-black">Install with Elestio</a> 
+                            ection, you can find details on how to open an Elestio account and create your Penpot instance.</p>
+                    </li>
+                    <li class="mb-6">
+                            <p>In the 
+                            <a href="/technical-guide/getting-started/#install-with-docker" class="text-primary hover:text-black">Install with Docker</a> 
+                            section, you can find the official Docker installation guide.</p>
+                    </li>
+                    <li class="mb-6">
+                        <p>In the 
+                        <a href="/technical-guide/configuration/" class="text-primary hover:text-black">Configuration</a> 
+                        section, you can find more advanced setup options.</p>
+                    </li>
+                    <li class="mb-6">
+                            <p>If you are a developer and want to get into the code, we recommend the
+                            <a href="/technical-guide/developer/" class="text-primary hover:text-black">Developer Guide</a> 
+                            that explains how to properly setup a development environment and many other dev-oriented documentation.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="pre-footer justify-center flex mt-20 p-8 border-t-2 border-dotted">
+        <a href="https://github.com/penpot/penpot-docs/blob/main/./index.njk " class=" text-primary text-base hover:text-black">Edit this page on GitHub</a>
+    </div>
+
+
+    <footer class=" bg-black items-center px-16 py-20">
+        <div>
+            <div class=" md:flex max-w-screen-x">
+                <a href="" class=" w-36  mr-24">
+                    <img src="../Img/penpot_logo.png" alt="" width="100%" >
+                </a>
+                <ul class=" text-white w-1/5 text-lg">
+                    <li class=" py-4 git"><a href="https://penpot.app/terms.html">Terms of service</a></li>
+                    <li class=" py-4 git"><a href="https://penpot.app/privacy.html">Privacy policy</a></li>
+                    <li class=" py-4 git"><a href="https://penpot.app/cookie.html">Cookie policy</a></li>
+                    <li class=" py-4 git"><a href="https://penpot.app/dpa.html">Data processing agreement</a></li>
+                </ul>
+
+                <ul class=" text-white w-1/5 text-lg md:pl-20">
+                    <li class=" py-4 git"><a href="https://user-guide">User guide</a></li>
+                    <li class=" py-4 git"><a href="https://contributing-guide">Contributing guide</a></li>
+                    <li class=" py-4 git"><a href="https://technical-guide">Technical guide</a></li>
+                    <li class=" py-4 git"><a href="https://faqs">FAQs</a></li>
+                </ul>
+
+                <ul class=" text-white w-1/5 text-lg md:pl-20 ">
+                    <li class=" py-4 git"><a href="https://penpot.app/#project">The Project</a></li>
+                    <li class=" py-4 git"><a href="https://penpot.app/about.html">About us</a></li>
+                    <li class=" py-4 git"><a href="https://github.com/penpot/penpot/blob/develop/CONTRIBUTING.md" target="_blank">Community</a></li>
+                    <li class=" py-4 git"><a href="https://penpot.app/#newsletter">Newsletter</a></li>
+                </ul>
+
+                <ul class=" text-white w-1/5 text-lg md:pl-20">
+                    <li class=" py-4 git"><a href="https://twitter.com/penpotapp" target="_blank">Twitter</a></li>
+                    <li class=" py-4 git"><a href="https://instagram.com/penpotapp/" target="_blank">Instagram</a></li>
+                    <li class=" py-4 git"><a href="https://github.com/penpot" target="_blank">Github</a></li>
+                    <li class=" py-4 git"><a href="https://www.linkedin.com/company/penpot/" target="_blank">Linkedin</a></li>
+                    <li class=" py-4 git"><a href="https://www.youtube.com/channel/UCAqS8G72uv9P5HG1IfgnQ9g" target="_blank">Youtube</a></li>
+                    <li class=" py-4 git"><a href="https://fosstodon.org/@penpot/" target="_blank">Mastodon</a></li>
+                    <li class=" py-4 git"><a href="https://www.producthunt.com/posts/penpot" target="_blank">Product Hunt</a></li>
+                </ul>
+            </div>
+            <div class="footer-text text-center mt-24">
+                <span class=" text-white">Penpot © 2022  |  Made with LOVE and Open Source</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
